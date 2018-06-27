@@ -1,8 +1,3 @@
-const { Database, aql }  = require('arangojs');
-const db = new Database({
-  url: 'http://127.0.0.1:8529',
-} );
-db.useBasicAuth('root', 'password1');
 (async function() {
   const collection = db.collection('people1')
   try {
